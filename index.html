@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APP Globo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab-button active" onclick="showTab('weblink')">WEBLINK</button>
+    <button class="tab-button" onclick="showTab('equipe')">EQUIPE</button>
+    <button class="tab-button" onclick="showTab('local')">LOCAL</button>
+    <button class="tab-button" onclick="showTab('incidente')">INCIDENTE</button>
+  </div>
+
+  <div class="tab-content" id="weblink">
+    <h2>WEBLINK</h2>
+    <label>Produto: <input type="text" /></label><br />
+    <label>Weblink 01: <input type="text" /></label><br />
+    <label>Weblink 02: <input type="text" /></label><br />
+    <label>Kit: <input type="text" /></label><br />
+    <label>Nome WL: <input type="text" /></label><br />
+    <label>Weblink utilizado: <input type="text" /></label><br />
+    <button class="cancel">Cancelar</button>
+    <button class="submit">Cadastrar</button>
+  </div>
+
+  <div class="tab-content" id="equipe" style="display:none;">
+    <h2>EQUIPE</h2>
+    <p>Conteúdo da aba EQUIPE.</p>
+  </div>
+
+  <div class="tab-content" id="local" style="display:none;">
+    <h2>LOCAL</h2>
+    <p>Conteúdo da aba LOCAL.</p>
+  </div>
+
+  <div class="tab-content" id="incidente" style="display:none;">
+    <h2>INCIDENTE</h2>
+    <p>Conteúdo da aba INCIDENTE.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
